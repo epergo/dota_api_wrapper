@@ -1,6 +1,8 @@
-require "bundler/gem_tasks"
-require "rspec/core/rake_task"
+require 'rake/testtask'
 
-RSpec::Core::RakeTask.new(:spec)
+Rake::TestTask.new do |t|
+  t.test_files = FileList['spec/lib/dota_api_wrapper/*_spec.rb']
+  t.verbose = true
+end
 
-task :default => :spec
+task :default => :test

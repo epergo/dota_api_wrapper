@@ -1,5 +1,6 @@
 require "dota_api_wrapper/version"
+require 'httparty'
 
-module DotaApiWrapper
-  # Your code goes here...
+Dir[File.dirname(__FILE__) + '/dota_api_wrapper/*.rb'].each do |file|
+  require file
 end
