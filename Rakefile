@@ -5,4 +5,8 @@ Rake::TestTask.new do |t|
   t.verbose = true
 end
 
-task :default => :test
+task :console do
+  exec 'pry -r dota_api_wrapper -I ./lib'
+end
+
+task default: :test
