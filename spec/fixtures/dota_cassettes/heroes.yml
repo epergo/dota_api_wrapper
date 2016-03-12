@@ -15,9 +15,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Expires:
-      - Sun, 21 Feb 2016 09:59:28 GMT
+      - Sat, 12 Mar 2016 13:17:24 GMT
       Date:
-      - Sun, 21 Feb 2016 09:59:28 GMT
+      - Sat, 12 Mar 2016 13:17:24 GMT
       Content-Length:
       - '10956'
       Connection:
@@ -192,71 +192,7 @@ http_interactions:
         113,\n\t\t\t\t\"localized_name\": \"Arc Warden\"\n\t\t\t}\n\t\t]\n\t\t,\n\t\t\"status\":
         200,\n\t\t\"count\": 111\n\t}\n}"
     http_version: 
-  recorded_at: Sun, 21 Feb 2016 09:59:28 GMT
-- request:
-    method: get
-    uri: http://api.steampowered.com/IEconDOTA2_570/GetHeroes/v0001?key=&language=en_us
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers: {}
-  response:
-    status:
-      code: 403
-      message: Forbidden
-    headers:
-      Content-Length:
-      - '168'
-      Content-Type:
-      - text/html; charset=UTF-8
-      Expires:
-      - Fri, 11 Mar 2016 19:01:24 GMT
-      Cache-Control:
-      - max-age=0, no-cache, no-store
-      Pragma:
-      - no-cache
-      Date:
-      - Fri, 11 Mar 2016 19:01:24 GMT
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: "<html><head><title>Forbidden</title></head><body><h1>Forbidden</h1>Access
-        is denied. Retrying will not help. Please verify your <pre>key=</pre> parameter.</body></html>"
-    http_version: 
-  recorded_at: Fri, 11 Mar 2016 19:01:24 GMT
-- request:
-    method: get
-    uri: http://api.steampowered.com/IEconDOTA2_570/GetHeroes/v0001?key=0DC019442063EB9914488A0AF8Aasdf&language=en_us
-    body:
-      encoding: US-ASCII
-      string: ''
-    headers: {}
-  response:
-    status:
-      code: 403
-      message: Forbidden
-    headers:
-      Content-Length:
-      - '168'
-      Content-Type:
-      - text/html; charset=UTF-8
-      Expires:
-      - Fri, 11 Mar 2016 19:05:18 GMT
-      Cache-Control:
-      - max-age=0, no-cache, no-store
-      Pragma:
-      - no-cache
-      Date:
-      - Fri, 11 Mar 2016 19:05:18 GMT
-      Connection:
-      - keep-alive
-    body:
-      encoding: UTF-8
-      string: "<html><head><title>Forbidden</title></head><body><h1>Forbidden</h1>Access
-        is denied. Retrying will not help. Please verify your <pre>key=</pre> parameter.</body></html>"
-    http_version: 
-  recorded_at: Fri, 11 Mar 2016 19:05:18 GMT
+  recorded_at: Sat, 12 Mar 2016 13:17:25 GMT
 - request:
     method: get
     uri: http://api.steampowered.com/IEconDOTA2_570/GetHeroes/v0001?key=0DC019442063EB9914488A0AF8ABE9D9&language=en_us
@@ -272,9 +208,9 @@ http_interactions:
       Content-Type:
       - application/json; charset=UTF-8
       Expires:
-      - Sat, 12 Mar 2016 13:03:58 GMT
+      - Sat, 12 Mar 2016 13:17:25 GMT
       Date:
-      - Sat, 12 Mar 2016 13:03:58 GMT
+      - Sat, 12 Mar 2016 13:17:25 GMT
       Content-Length:
       - '10956'
       Connection:
@@ -449,5 +385,5 @@ http_interactions:
         113,\n\t\t\t\t\"localized_name\": \"Arc Warden\"\n\t\t\t}\n\t\t]\n\t\t,\n\t\t\"status\":
         200,\n\t\t\"count\": 111\n\t}\n}"
     http_version: 
-  recorded_at: Sat, 12 Mar 2016 13:03:58 GMT
+  recorded_at: Sat, 12 Mar 2016 13:17:25 GMT
 recorded_with: VCR 3.0.1
