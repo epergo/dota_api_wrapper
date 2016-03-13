@@ -6,7 +6,7 @@ describe DotaApiWrapper::Hero do
       DotaApiWrapper::Hero.must_include HTTParty
     end
 
-    it 'must have the base url set to Steam Hero endpoint' do
+    it 'must have the base url set to Steam Econ endpoint' do
       DotaApiWrapper::Hero.base_uri.must_equal 'http://api.steampowered.com/IEconDOTA2_570'
     end
   end
@@ -26,7 +26,7 @@ describe DotaApiWrapper::Hero do
       hero.must_respond_to :retrieve_heroes
     end
 
-    it 'must parse the api response from JSON to Array' do
+    it 'must parse the api response from JSON to Hash' do
       hero.retrieve_heroes.must_be_instance_of Hash
     end
 
