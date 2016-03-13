@@ -9,13 +9,12 @@ module DotaApiWrapper
 
     def initialize(steam_id)
       @steamid = steam_id
-      player_info
     end
 
     # If the parameter name exists in the hash, it will be returned
     # In other case in will raise an exception 'NoMethodError'
     def method_missing(name, *args, &block)
-      player_info.key?(name.to_s) ? retrieve_info[name.to_s] : super
+      player_info.key?(name.to_s) ? player_info[name.to_s] : super
     end
 
     def player_info
