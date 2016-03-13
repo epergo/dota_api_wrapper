@@ -1,6 +1,8 @@
+require "codeclimate-test-reporter"
+CodeClimate::TestReporter.start
+
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 require_relative '../lib/dota_api_wrapper'
-
 
 # Dependencies
 require 'vcr'
