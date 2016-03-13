@@ -1,6 +1,7 @@
 # DotaApiWrapper
 [![Build Status](https://travis-ci.org/epergo/dota_api_wrapper.svg?branch=master)](https://travis-ci.org/epergo/dota_api_wrapper)
 [![Code Climate](https://codeclimate.com/github/epergo/dota_api_wrapper/badges/gpa.svg)](https://codeclimate.com/github/epergo/dota_api_wrapper)
+[![Test Coverage](https://codeclimate.com/github/epergo/dota_api_wrapper/badges/coverage.svg)](https://codeclimate.com/github/epergo/dota_api_wrapper/coverage)
 
 
 ## Installation
