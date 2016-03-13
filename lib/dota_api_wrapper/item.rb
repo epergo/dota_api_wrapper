@@ -1,14 +1,11 @@
-require_relative 'base'
+require_relative 'econ'
 
 module DotaApiWrapper
-  class Item < Base
-    base_uri(BASE_URI + '/IEconDOTA2_570')
-
+  class Item < Econ
     attr_accessor :items
-    attr_accessor :language
 
     def initialize(lang = 'en_us')
-      @language = lang
+      super(lang)
       @items = retrieve_items
     end
 
