@@ -1,14 +1,11 @@
-require_relative 'base'
+require_relative 'econ'
 
 module DotaApiWrapper
-  class Hero < Base
-    base_uri(BASE_URI + '/IEconDOTA2_570')
-
+  class Hero < Econ
     attr_accessor :heroes
-    attr_accessor :language
 
     def initialize(lang = 'en_us')
-      @language = lang
+      super(lang)
       @heroes = retrieve_heroes
     end
 
