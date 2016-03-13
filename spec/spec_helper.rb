@@ -17,4 +17,7 @@ Minitest::Reporters.use!([Minitest::Reporters::SpecReporter.new(:color => true)]
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/fixtures/dota_cassettes'
   c.hook_into :webmock
+
+  # Let codeclimate-test-reporter to post coverage results
+  config.ignore_hosts 'codeclimate.com'
 end
