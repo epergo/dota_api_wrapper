@@ -20,4 +20,7 @@ VCR.configure do |c|
 
   # Let codeclimate-test-reporter to post coverage results
   c.ignore_hosts 'codeclimate.com'
+
+  # Don't show my API key to the world!
+  c.filter_sensitive_data('<API_KEY>') { ENV['STEAM_API_KEY'] }
 end
