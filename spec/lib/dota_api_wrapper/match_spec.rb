@@ -78,7 +78,7 @@ describe DotaApiWrapper::Match do
     end
 
     it 'must contain "players" Array' do
-      [].must_be_instance_of Array
+      match.players.must_be_instance_of Array
     end
   end
 end
