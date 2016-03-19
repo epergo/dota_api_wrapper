@@ -8,7 +8,7 @@ module DotaApiWrapper
     attr_accessor :match_details
 
     def initialize(match_info)
-      match_info.delete(:players)
+      match_info.delete('players')
       @match_info = match_info
     end
 
