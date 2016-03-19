@@ -47,12 +47,38 @@ describe DotaApiWrapper::Match do
   describe 'dynamic attributes' do
     let(:match) { DotaApiWrapper::Match.new(@match_info) }
 
+    before do
+      VCR.insert_cassette('match', record: :new_episodes)
+      match.players
+    end
+
+    after do
+      VCR.eject_cassette
+    end
+
     it 'must return the attribute value if present' do
       match.match_id.wont_be_nil
     end
 
     it 'must raise method missing if attribute is not present' do
       lambda { match.foo_attribute }.must_raise NoMethodError
+    end
+  end
+
+  describe 'obtain extra details' do
+    let(:match) { DotaApiWrapper::Match.new(@match_info) }
+
+    before do
+      VCR.insert_cassette('match', record: :new_episodes)
+      match.players
+    end
+
+    after do
+      VCR.eject_cassette
+    end
+
+    it 'must contain "players" Array' do
+      [].must_be_instance_of Array
     end
   end
 end

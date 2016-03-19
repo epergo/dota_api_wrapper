@@ -1,0 +1,113 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.steampowered.com/IDOTA2Match_570/GetMatchDetails/V001?key=<API_KEY>&match_id=2233484164
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Last-Modified:
+      - Sat, 19 Mar 2016 11:33:39 GMT
+      Content-Length:
+      - '5107'
+      Expires:
+      - Sat, 19 Mar 2016 13:40:12 GMT
+      Cache-Control:
+      - max-age=0, no-cache, no-store
+      Pragma:
+      - no-cache
+      Date:
+      - Sat, 19 Mar 2016 13:40:12 GMT
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "{\n\t\"result\": {\n\t\t\"players\": [\n\t\t\t{\n\t\t\t\t\"account_id\":
+        4294967295,\n\t\t\t\t\"player_slot\": 0,\n\t\t\t\t\"hero_id\": 0,\n\t\t\t\t\"item_0\":
+        0,\n\t\t\t\t\"item_1\": 0,\n\t\t\t\t\"item_2\": 0,\n\t\t\t\t\"item_3\": 0,\n\t\t\t\t\"item_4\":
+        0,\n\t\t\t\t\"item_5\": 0,\n\t\t\t\t\"kills\": 0,\n\t\t\t\t\"deaths\": 0,\n\t\t\t\t\"assists\":
+        0,\n\t\t\t\t\"leaver_status\": 1,\n\t\t\t\t\"last_hits\": 0,\n\t\t\t\t\"denies\":
+        0,\n\t\t\t\t\"gold_per_min\": 1799,\n\t\t\t\t\"xp_per_min\": 0,\n\t\t\t\t\"level\":
+        0,\n\t\t\t\t\"gold\": 0,\n\t\t\t\t\"gold_spent\": 0,\n\t\t\t\t\"hero_damage\":
+        0,\n\t\t\t\t\"tower_damage\": 0,\n\t\t\t\t\"hero_healing\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"account_id\":
+        4294967295,\n\t\t\t\t\"player_slot\": 1,\n\t\t\t\t\"hero_id\": 0,\n\t\t\t\t\"item_0\":
+        0,\n\t\t\t\t\"item_1\": 0,\n\t\t\t\t\"item_2\": 0,\n\t\t\t\t\"item_3\": 0,\n\t\t\t\t\"item_4\":
+        0,\n\t\t\t\t\"item_5\": 0,\n\t\t\t\t\"kills\": 0,\n\t\t\t\t\"deaths\": 0,\n\t\t\t\t\"assists\":
+        0,\n\t\t\t\t\"leaver_status\": 3,\n\t\t\t\t\"last_hits\": 0,\n\t\t\t\t\"denies\":
+        0,\n\t\t\t\t\"gold_per_min\": 1799,\n\t\t\t\t\"xp_per_min\": 0,\n\t\t\t\t\"level\":
+        0,\n\t\t\t\t\"gold\": 0,\n\t\t\t\t\"gold_spent\": 0,\n\t\t\t\t\"hero_damage\":
+        0,\n\t\t\t\t\"tower_damage\": 0,\n\t\t\t\t\"hero_healing\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"account_id\":
+        210723266,\n\t\t\t\t\"player_slot\": 2,\n\t\t\t\t\"hero_id\": 0,\n\t\t\t\t\"item_0\":
+        0,\n\t\t\t\t\"item_1\": 0,\n\t\t\t\t\"item_2\": 0,\n\t\t\t\t\"item_3\": 0,\n\t\t\t\t\"item_4\":
+        0,\n\t\t\t\t\"item_5\": 0,\n\t\t\t\t\"kills\": 0,\n\t\t\t\t\"deaths\": 0,\n\t\t\t\t\"assists\":
+        0,\n\t\t\t\t\"leaver_status\": 1,\n\t\t\t\t\"last_hits\": 0,\n\t\t\t\t\"denies\":
+        0,\n\t\t\t\t\"gold_per_min\": 1799,\n\t\t\t\t\"xp_per_min\": 0,\n\t\t\t\t\"level\":
+        0,\n\t\t\t\t\"gold\": 0,\n\t\t\t\t\"gold_spent\": 0,\n\t\t\t\t\"hero_damage\":
+        0,\n\t\t\t\t\"tower_damage\": 0,\n\t\t\t\t\"hero_healing\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"account_id\":
+        4294967295,\n\t\t\t\t\"player_slot\": 3,\n\t\t\t\t\"hero_id\": 0,\n\t\t\t\t\"item_0\":
+        0,\n\t\t\t\t\"item_1\": 0,\n\t\t\t\t\"item_2\": 0,\n\t\t\t\t\"item_3\": 0,\n\t\t\t\t\"item_4\":
+        0,\n\t\t\t\t\"item_5\": 0,\n\t\t\t\t\"kills\": 0,\n\t\t\t\t\"deaths\": 0,\n\t\t\t\t\"assists\":
+        0,\n\t\t\t\t\"leaver_status\": 1,\n\t\t\t\t\"last_hits\": 0,\n\t\t\t\t\"denies\":
+        0,\n\t\t\t\t\"gold_per_min\": 1799,\n\t\t\t\t\"xp_per_min\": 0,\n\t\t\t\t\"level\":
+        0,\n\t\t\t\t\"gold\": 0,\n\t\t\t\t\"gold_spent\": 0,\n\t\t\t\t\"hero_damage\":
+        0,\n\t\t\t\t\"tower_damage\": 0,\n\t\t\t\t\"hero_healing\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"account_id\":
+        4294967295,\n\t\t\t\t\"player_slot\": 4,\n\t\t\t\t\"hero_id\": 0,\n\t\t\t\t\"item_0\":
+        0,\n\t\t\t\t\"item_1\": 0,\n\t\t\t\t\"item_2\": 0,\n\t\t\t\t\"item_3\": 0,\n\t\t\t\t\"item_4\":
+        0,\n\t\t\t\t\"item_5\": 0,\n\t\t\t\t\"kills\": 0,\n\t\t\t\t\"deaths\": 0,\n\t\t\t\t\"assists\":
+        0,\n\t\t\t\t\"leaver_status\": 1,\n\t\t\t\t\"last_hits\": 0,\n\t\t\t\t\"denies\":
+        0,\n\t\t\t\t\"gold_per_min\": 1799,\n\t\t\t\t\"xp_per_min\": 0,\n\t\t\t\t\"level\":
+        0,\n\t\t\t\t\"gold\": 0,\n\t\t\t\t\"gold_spent\": 0,\n\t\t\t\t\"hero_damage\":
+        0,\n\t\t\t\t\"tower_damage\": 0,\n\t\t\t\t\"hero_healing\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"account_id\":
+        4294967295,\n\t\t\t\t\"player_slot\": 128,\n\t\t\t\t\"hero_id\": 0,\n\t\t\t\t\"item_0\":
+        0,\n\t\t\t\t\"item_1\": 0,\n\t\t\t\t\"item_2\": 0,\n\t\t\t\t\"item_3\": 0,\n\t\t\t\t\"item_4\":
+        0,\n\t\t\t\t\"item_5\": 0,\n\t\t\t\t\"kills\": 0,\n\t\t\t\t\"deaths\": 0,\n\t\t\t\t\"assists\":
+        0,\n\t\t\t\t\"leaver_status\": 1,\n\t\t\t\t\"last_hits\": 0,\n\t\t\t\t\"denies\":
+        0,\n\t\t\t\t\"gold_per_min\": 1799,\n\t\t\t\t\"xp_per_min\": 0,\n\t\t\t\t\"level\":
+        0,\n\t\t\t\t\"gold\": 0,\n\t\t\t\t\"gold_spent\": 0,\n\t\t\t\t\"hero_damage\":
+        0,\n\t\t\t\t\"tower_damage\": 0,\n\t\t\t\t\"hero_healing\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"account_id\":
+        4294967295,\n\t\t\t\t\"player_slot\": 129,\n\t\t\t\t\"hero_id\": 0,\n\t\t\t\t\"item_0\":
+        0,\n\t\t\t\t\"item_1\": 0,\n\t\t\t\t\"item_2\": 0,\n\t\t\t\t\"item_3\": 0,\n\t\t\t\t\"item_4\":
+        0,\n\t\t\t\t\"item_5\": 0,\n\t\t\t\t\"kills\": 0,\n\t\t\t\t\"deaths\": 0,\n\t\t\t\t\"assists\":
+        0,\n\t\t\t\t\"leaver_status\": 1,\n\t\t\t\t\"last_hits\": 0,\n\t\t\t\t\"denies\":
+        0,\n\t\t\t\t\"gold_per_min\": 2500,\n\t\t\t\t\"xp_per_min\": 0,\n\t\t\t\t\"level\":
+        0,\n\t\t\t\t\"gold\": 0,\n\t\t\t\t\"gold_spent\": 0,\n\t\t\t\t\"hero_damage\":
+        0,\n\t\t\t\t\"tower_damage\": 0,\n\t\t\t\t\"hero_healing\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"account_id\":
+        192848922,\n\t\t\t\t\"player_slot\": 130,\n\t\t\t\t\"hero_id\": 0,\n\t\t\t\t\"item_0\":
+        0,\n\t\t\t\t\"item_1\": 0,\n\t\t\t\t\"item_2\": 0,\n\t\t\t\t\"item_3\": 0,\n\t\t\t\t\"item_4\":
+        0,\n\t\t\t\t\"item_5\": 0,\n\t\t\t\t\"kills\": 0,\n\t\t\t\t\"deaths\": 0,\n\t\t\t\t\"assists\":
+        0,\n\t\t\t\t\"leaver_status\": 0,\n\t\t\t\t\"last_hits\": 0,\n\t\t\t\t\"denies\":
+        0,\n\t\t\t\t\"gold_per_min\": 2500,\n\t\t\t\t\"xp_per_min\": 0,\n\t\t\t\t\"level\":
+        0,\n\t\t\t\t\"gold\": 0,\n\t\t\t\t\"gold_spent\": 0,\n\t\t\t\t\"hero_damage\":
+        0,\n\t\t\t\t\"tower_damage\": 0,\n\t\t\t\t\"hero_healing\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"account_id\":
+        4294967295,\n\t\t\t\t\"player_slot\": 131,\n\t\t\t\t\"hero_id\": 51,\n\t\t\t\t\"item_0\":
+        0,\n\t\t\t\t\"item_1\": 0,\n\t\t\t\t\"item_2\": 0,\n\t\t\t\t\"item_3\": 0,\n\t\t\t\t\"item_4\":
+        0,\n\t\t\t\t\"item_5\": 0,\n\t\t\t\t\"kills\": 0,\n\t\t\t\t\"deaths\": 0,\n\t\t\t\t\"assists\":
+        0,\n\t\t\t\t\"leaver_status\": 0,\n\t\t\t\t\"last_hits\": 0,\n\t\t\t\t\"denies\":
+        0,\n\t\t\t\t\"gold_per_min\": 2500,\n\t\t\t\t\"xp_per_min\": 0,\n\t\t\t\t\"level\":
+        1,\n\t\t\t\t\"gold\": 1042,\n\t\t\t\t\"gold_spent\": 0,\n\t\t\t\t\"hero_damage\":
+        0,\n\t\t\t\t\"tower_damage\": 0,\n\t\t\t\t\"hero_healing\": 0\n\t\t\t},\n\t\t\t{\n\t\t\t\t\"account_id\":
+        4294967295,\n\t\t\t\t\"player_slot\": 132,\n\t\t\t\t\"hero_id\": 0,\n\t\t\t\t\"item_0\":
+        0,\n\t\t\t\t\"item_1\": 0,\n\t\t\t\t\"item_2\": 0,\n\t\t\t\t\"item_3\": 0,\n\t\t\t\t\"item_4\":
+        0,\n\t\t\t\t\"item_5\": 0,\n\t\t\t\t\"kills\": 0,\n\t\t\t\t\"deaths\": 0,\n\t\t\t\t\"assists\":
+        0,\n\t\t\t\t\"leaver_status\": 1,\n\t\t\t\t\"last_hits\": 0,\n\t\t\t\t\"denies\":
+        0,\n\t\t\t\t\"gold_per_min\": 1799,\n\t\t\t\t\"xp_per_min\": 0,\n\t\t\t\t\"level\":
+        0,\n\t\t\t\t\"gold\": 0,\n\t\t\t\t\"gold_spent\": 0,\n\t\t\t\t\"hero_damage\":
+        0,\n\t\t\t\t\"tower_damage\": 0,\n\t\t\t\t\"hero_healing\": 0\n\t\t\t}\n\t\t]\n\t\t,\n\t\t\"radiant_win\":
+        false,\n\t\t\"duration\": 0,\n\t\t\"start_time\": 1458387219,\n\t\t\"match_id\":
+        2233484164,\n\t\t\"match_seq_num\": 1958686385,\n\t\t\"tower_status_radiant\":
+        2047,\n\t\t\"tower_status_dire\": 2047,\n\t\t\"barracks_status_radiant\":
+        63,\n\t\t\"barracks_status_dire\": 63,\n\t\t\"cluster\": 138,\n\t\t\"first_blood_time\":
+        0,\n\t\t\"lobby_type\": 0,\n\t\t\"human_players\": 10,\n\t\t\"leagueid\":
+        0,\n\t\t\"positive_votes\": 0,\n\t\t\"negative_votes\": 0,\n\t\t\"game_mode\":
+        4,\n\t\t\"flags\": 0,\n\t\t\"engine\": 1\n\t}\n}"
+    http_version: 
+  recorded_at: Sat, 19 Mar 2016 13:40:12 GMT
+recorded_with: VCR 3.0.1
