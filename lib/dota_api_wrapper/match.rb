@@ -28,6 +28,12 @@ module DotaApiWrapper
       @match_details ||= retrieve_details
     end
 
+    # Return hash with all data from match
+    def complete_details
+      match_info.merge(match_details)
+    end
+
+    # Consume API wrapper to get matches
     def self.get_matches(options = {})
       api_result = retrieve_info('/GetMatchHistory/V001', options)
       return api_result['result'] unless api_result.empty?

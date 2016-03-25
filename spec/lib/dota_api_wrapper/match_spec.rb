@@ -80,5 +80,9 @@ describe DotaApiWrapper::Match do
     it 'must contain "players" Array' do
       match.players.must_be_instance_of Array
     end
+
+    it 'must return full details' do
+      match.complete_details['match_id'].wont_be_nil
+    end
   end
 end
