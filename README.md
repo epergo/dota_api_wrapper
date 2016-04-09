@@ -2,6 +2,7 @@
 [![Build Status](https://travis-ci.org/epergo/dota_api_wrapper.svg?branch=master)](https://travis-ci.org/epergo/dota_api_wrapper)
 [![Code Climate](https://codeclimate.com/github/epergo/dota_api_wrapper/badges/gpa.svg)](https://codeclimate.com/github/epergo/dota_api_wrapper)
 [![Test Coverage](https://codeclimate.com/github/epergo/dota_api_wrapper/badges/coverage.svg)](https://codeclimate.com/github/epergo/dota_api_wrapper/coverage)
+[![Gem Version](https://badge.fury.io/rb/dota_api_wrapper.svg)](https://badge.fury.io/rb/dota_api_wrapper)
 
 
 ## Installation
@@ -32,15 +33,15 @@ This gem will read your key from an environment variable, so once you have it yo
 
 ### Heroes
 
-`heroes = DotaApiWrapper::Hero.new`
+`heroes = DotaApiWrapper::Resource.retrieve_heroes`
 
-`heroes.find_by_id(25) => {"name"=>"npc_dota_hero_lina", "id"=>25, "localized_name"=>"Lina"}`
+`heroes[56] => {"name"=>"npc_dota_hero_clinkz", "id"=>56, "localized_name"=>"Clinkz"}`
 
 ### Items
 
-`items = DotaApiWrapper::Item.new`
+`items = DotaApiWrapper::Resource.retrieve_items
 
-`items.find_by_id(25) => {"id"=>25, "name"=>"item_gloves", "cost"=>500, "secret_shop"=>0, "side_shop"=>1, "recipe"=>0, "localized_name"=>"Gloves of Haste"}`
+`items[25] => {"id"=>25, "name"=>"item_gloves", "cost"=>500, "secret_shop"=>0, "side_shop"=>1, "recipe"=>0, "localized_name"=>"Gloves of Haste"}`
 
 ### Steam User's Summary
 
