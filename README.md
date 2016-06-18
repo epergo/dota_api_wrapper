@@ -35,13 +35,25 @@ This gem will read your key from an environment variable, so once you have it yo
 
 `heroes = DotaApiWrapper::Resource.retrieve_heroes`
 
-`heroes[56] => {"name"=>"npc_dota_hero_clinkz", "id"=>56, "localized_name"=>"Clinkz"}`
+    heroes[56] => {
+      "name" => "npc_dota_hero_clinkz",
+      "id" = >56,
+      "localized_name" => "Clinkz"
+    }
 
 ### Items
 
-`items = DotaApiWrapper::Resource.retrieve_items
+`items = DotaApiWrapper::Resource.retrieve_items`
 
-`items[25] => {"id"=>25, "name"=>"item_gloves", "cost"=>500, "secret_shop"=>0, "side_shop"=>1, "recipe"=>0, "localized_name"=>"Gloves of Haste"}`
+    items[25] => {
+      "id" => 25,
+      "name" => "item_gloves",
+      "cost" => 500,
+      "secret_shop" => 0,
+      "side_shop" => 1,
+      "recipe" => 0,
+      "localized_name" => "Gloves of Haste"
+    }
 
 ### Steam User's Summary
 
