@@ -17,6 +17,13 @@ module DotaApiWrapper
       player_info.key?(name.to_s) ? player_info[name.to_s] : super
     end
 
+    # Converts 64bits steam id to 32bits
+    def account_id
+      return if player_info['steamid'].nil?
+
+      player_info['steamid'].to_i - 76561197960265728
+    end
+
     def player_info
       @player_info ||= retrieve_info
     end
