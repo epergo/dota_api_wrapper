@@ -2,14 +2,14 @@ require_relative '../../spec_helper'
 
 describe DotaApiWrapper::Match do
   def setup
-    @match_info = { 'match_id' => 2233484164, 'match_seq_num' => 1958686385,
-      'start_time' => 1458387219, 'lobby_type' => 0, 'radiant_team_id' => 0,
-      'dire_team_id' => 0, 'players' => [
-        { 'account_id' => 4294967295, 'player_slot' => 0, 'hero_id' => 0 },
-        { 'account_id' => 4294967295, 'player_slot' => 1, 'hero_id' => 0 },
-        { 'account_id' => 210723266, 'player_slot' => 2, 'hero_id' => 0 },
-        { 'account_id' => 4294967295, 'player_slot' => 3, 'hero_id' => 0 }]
-      }
+    @match_info = { 'match_id' => 2_233_484_164, 'match_seq_num' => 1_958_686_385,
+                    'start_time' => 1_458_387_219, 'lobby_type' => 0, 'radiant_team_id' => 0,
+                    'dire_team_id' => 0, 'players' => [
+                      { 'account_id' => 4_294_967_295, 'player_slot' => 0, 'hero_id' => 0 },
+                      { 'account_id' => 4_294_967_295, 'player_slot' => 1, 'hero_id' => 0 },
+                      { 'account_id' => 210_723_266, 'player_slot' => 2, 'hero_id' => 0 },
+                      { 'account_id' => 4_294_967_295, 'player_slot' => 3, 'hero_id' => 0 }
+                    ] }
   end
 
   describe 'default attributes' do
@@ -61,7 +61,7 @@ describe DotaApiWrapper::Match do
     end
 
     it 'must raise method missing if attribute is not present' do
-      lambda { match.foo_attribute }.must_raise NoMethodError
+      -> { match.foo_attribute }.must_raise NoMethodError
     end
   end
 

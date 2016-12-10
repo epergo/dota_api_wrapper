@@ -21,7 +21,7 @@ module DotaApiWrapper
     def account_id
       return if player_info['steamid'].nil?
 
-      player_info['steamid'].to_i - 76561197960265728
+      player_info['steamid'].to_i - 76_561_197_960_265_728
     end
 
     def player_info
