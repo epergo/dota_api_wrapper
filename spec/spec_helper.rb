@@ -11,7 +11,7 @@ require 'webmock/minitest'
 require 'minitest/reporters'
 
 # Color ouput for minitest results
-Minitest::Reporters.use!([Minitest::Reporters::SpecReporter.new(color: true)])
+Minitest::Reporters.use! Minitest::Reporters::DefaultReporter.new
 
 # VCR config
 VCR.configure do |c|
