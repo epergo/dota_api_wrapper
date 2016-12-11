@@ -1,0 +1,11 @@
+Metrics/LineLength:
+  Max: 120
+
+AllCops:
+  Exclude:
+    - dota_api_wrapper.gemspec
+    - Gemfile
+    - Gemfile.lock
+
+Documentation:
+  Enabled: false

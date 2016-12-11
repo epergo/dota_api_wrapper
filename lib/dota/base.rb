@@ -3,7 +3,7 @@ module Dota
   class Base
     include HTTParty
 
-    BASE_URI = 'http://api.steampowered.com'.freeze
+    BASE_URI = 'http://api.steampowered.com'
     API_KEY = ENV['STEAM_API_KEY']
 
     def get(uri, options)
