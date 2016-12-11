@@ -2,7 +2,7 @@ require 'simplecov'
 SimpleCov.start
 
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require_relative '../lib/dota_api_wrapper'
+require_relative '../lib/dota'
 
 # Dependencies
 require 'vcr'

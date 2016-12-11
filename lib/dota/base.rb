@@ -1,4 +1,5 @@
-module DotaApiWrapper
+# frozen_string_literal: true
+module Dota
   class Base
     include HTTParty
 

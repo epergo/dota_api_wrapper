@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'dota_api_wrapper/version'
+require 'dota/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'dota_api_wrapper'
-  spec.version       = DotaApiWrapper::VERSION
+  spec.name          = 'dota'
+  spec.version       = Dota::VERSION
   spec.authors       = ['Eloy']
   spec.email         = ['ej.perezgomez@gmail.com']
 

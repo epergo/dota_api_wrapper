@@ -1,4 +1,4 @@
-# DotaApiWrapper
+# Dota Api Wrapper
 [![Build Status](https://travis-ci.org/epergo/dota_api_wrapper.svg?branch=master)](https://travis-ci.org/epergo/dota_api_wrapper)
 [![Code Climate](https://codeclimate.com/github/epergo/dota_api_wrapper/badges/gpa.svg)](https://codeclimate.com/github/epergo/dota_api_wrapper)
 [![Test Coverage](https://codeclimate.com/github/epergo/dota_api_wrapper/badges/coverage.svg)](https://codeclimate.com/github/epergo/dota_api_wrapper/coverage)
@@ -33,7 +33,7 @@ This gem will read your key from an environment variable, so once you have it yo
 
 ### Heroes
 
-`heroes = DotaApiWrapper::Resource.retrieve_heroes`
+`heroes = Dota::Resource.retrieve_heroes`
 
     heroes[56] => {
       "name" => "npc_dota_hero_clinkz",
@@ -43,7 +43,7 @@ This gem will read your key from an environment variable, so once you have it yo
 
 ### Items
 
-`items = DotaApiWrapper::Resource.retrieve_items`
+`items = Dota::Resource.retrieve_items`
 
     items[25] => {
       "id" => 25,
@@ -59,7 +59,7 @@ This gem will read your key from an environment variable, so once you have it yo
 
 To get all the information of a player you need its 64bits account ID.
 
-`player = DotaApiWrapper::Player.new(76561197997499174)`
+`player = Dota::Player.new(76561197997499174)`
 
 Then the first time you access one of its attributes, all the information of the player will be fetched from the API.
 
@@ -90,9 +90,9 @@ You can access every attribute method-like, for example:
 
 ### Matches
 
-You can query the API in search of the collection of matches you need. For that purpose you can use the method `get_matches` of `DotaApiWrapper::Match` class.
+You can query the API in search of the collection of matches you need. For that purpose you can use the method `get_matches` of `Dota::Match` class.
 
-    api_result = DotaApiWrapper::Match.get_matches
+    api_result = Dota::Match.get_matches
 
 `get_matches` Accepts the following options:
 
@@ -108,7 +108,7 @@ You can query the API in search of the collection of matches you need. For that 
 
 Once you have your collection of matches you can instantiate a `Match` object to work with it.
 
-    match = DotaApiWrapper::Match.new(api_result['matches'].first)
+    match = Dota::Match.new(api_result['matches'].first)
     match.radiant_win => true
 
 ## Development
