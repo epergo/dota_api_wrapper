@@ -26,16 +26,16 @@ describe DotaApiWrapper::Player do
       VCR.eject_cassette
     end
 
-    it "must have a 'retrieve_info' method" do
-      player.must_respond_to :retrieve_info
+    it "must have a 'info' method" do
+      player.must_respond_to :info
     end
 
     it 'must parse the api response from JSON to Hash' do
-      player.retrieve_info.must_be_instance_of Hash
+      player.info.must_be_instance_of Hash
     end
 
     it 'must perform the request and get the data of the selected player' do
-      player.retrieve_info['steamid'].must_equal player.steamid
+      player.info['steamid'].must_equal player.steamid
     end
   end
 
@@ -44,7 +44,7 @@ describe DotaApiWrapper::Player do
 
     before do
       VCR.insert_cassette('player', record: :new_episodes)
-      player.retrieve_info
+      player.info
     end
 
     after do

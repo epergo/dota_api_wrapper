@@ -5,7 +5,6 @@ module DotaApiWrapper
     base_uri(BASE_URI + '/IDOTA2Match_570')
 
     attr_accessor :match_info
-    attr_accessor :match_details
 
     def initialize(match_info)
       match_info.delete('players')

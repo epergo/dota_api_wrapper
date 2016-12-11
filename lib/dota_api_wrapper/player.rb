@@ -5,7 +5,6 @@ module DotaApiWrapper
     base_uri(BASE_URI + '/ISteamUser')
 
     attr_accessor :steam_id
-    attr_accessor :player_info
 
     def initialize(steam_id)
       @steamid = steam_id
@@ -14,19 +13,21 @@ module DotaApiWrapper
     # If the parameter name exists in the hash, it will be returned
     # In other case in will raise an exception 'NoMethodError'
     def method_missing(name, *args, &block)
-      player_info.key?(name.to_s) ? player_info[name.to_s] : super
+      info.key?(name.to_s) ? info[name.to_s] : super
     end
 
     # Converts 64bits steam id to 32bits
     def account_id
-      return if player_info['steamid'].nil?
+      return if info['steamid'].nil?
 
-      player_info['steamid'].to_i - 76_561_197_960_265_728
+      info['steamid'].to_i - 76_561_197_960_265_728
     end
 
-    def player_info
-      @player_info ||= retrieve_info
+    def info
+      @info ||= retrieve_info
     end
+
+    private
 
     def retrieve_info
       query_params = { 'key' => API_KEY, 'steamids' => @steamid }
