@@ -1,6 +1,6 @@
 require_relative 'base'
 
-module DotaApiWrapper
+module Dota
   class Player < Base
     base_uri(BASE_URI + '/ISteamUser')
 

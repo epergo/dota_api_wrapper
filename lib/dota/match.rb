@@ -1,6 +1,6 @@
 require_relative 'base'
 
-module DotaApiWrapper
+module Dota
   class Match < Base
     base_uri(BASE_URI + '/IDOTA2Match_570')
 

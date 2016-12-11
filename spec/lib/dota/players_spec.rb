@@ -1,22 +1,22 @@
 require_relative '../../spec_helper'
 
-describe DotaApiWrapper::Player do
+describe Dota::Player do
   def setup
     @steamid = '76561197997499174'
   end
 
   describe 'default attributes' do
     it 'must include httparty methods' do
-      DotaApiWrapper::Player.must_include HTTParty
+      Dota::Player.must_include HTTParty
     end
 
     it 'must have the base url set to Steam Player Summaries endpoint' do
-      DotaApiWrapper::Player.base_uri.must_equal 'http://api.steampowered.com/ISteamUser'
+      Dota::Player.base_uri.must_equal 'http://api.steampowered.com/ISteamUser'
     end
   end
 
   describe 'Get Player Info' do
-    let(:player) { DotaApiWrapper::Player.new(@steamid) }
+    let(:player) { Dota::Player.new(@steamid) }
 
     before do
       VCR.insert_cassette('player', record: :new_episodes)
@@ -40,7 +40,7 @@ describe DotaApiWrapper::Player do
   end
 
   describe 'dynamic attributes' do
-    let(:player) { DotaApiWrapper::Player.new(@steamid) }
+    let(:player) { Dota::Player.new(@steamid) }
 
     before do
       VCR.insert_cassette('player', record: :new_episodes)

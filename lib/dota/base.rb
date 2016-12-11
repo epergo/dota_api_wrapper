@@ -1,4 +1,4 @@
-module DotaApiWrapper
+module Dota
   class Base
     include HTTParty
 

@@ -1,6 +1,6 @@
 require_relative '../../spec_helper'
 
-describe DotaApiWrapper::Match do
+describe Dota::Match do
   def setup
     @match_info = { 'match_id' => 2_233_484_164, 'match_seq_num' => 1_958_686_385,
                     'start_time' => 1_458_387_219, 'lobby_type' => 0, 'radiant_team_id' => 0,
@@ -14,11 +14,11 @@ describe DotaApiWrapper::Match do
 
   describe 'default attributes' do
     it 'must include httparty methods' do
-      DotaApiWrapper::Match.must_include HTTParty
+      Dota::Match.must_include HTTParty
     end
 
     it 'must have the base url set to Steam Match Summaries endpoint' do
-      DotaApiWrapper::Match.base_uri.must_equal 'http://api.steampowered.com/IDOTA2Match_570'
+      Dota::Match.base_uri.must_equal 'http://api.steampowered.com/IDOTA2Match_570'
     end
   end
 
@@ -32,20 +32,20 @@ describe DotaApiWrapper::Match do
     end
 
     it "must have a 'get_matches' method" do
-      DotaApiWrapper::Match.must_respond_to :get_matches
+      Dota::Match.must_respond_to :get_matches
     end
 
     it 'must parse the api response from JSON to Hash' do
-      DotaApiWrapper::Match.get_matches.must_be_instance_of Hash
+      Dota::Match.get_matches.must_be_instance_of Hash
     end
 
     it 'must perform the request and get any number of matches' do
-      DotaApiWrapper::Match.get_matches['num_results'].wont_be_nil
+      Dota::Match.get_matches['num_results'].wont_be_nil
     end
   end
 
   describe 'dynamic attributes' do
-    let(:match) { DotaApiWrapper::Match.new(@match_info) }
+    let(:match) { Dota::Match.new(@match_info) }
 
     before do
       VCR.insert_cassette('match', record: :new_episodes)
@@ -66,7 +66,7 @@ describe DotaApiWrapper::Match do
   end
 
   describe 'obtain extra details' do
-    let(:match) { DotaApiWrapper::Match.new(@match_info) }
+    let(:match) { Dota::Match.new(@match_info) }
 
     before do
       VCR.insert_cassette('match', record: :new_episodes)
